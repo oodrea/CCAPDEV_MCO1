@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animo La Salle</title>
+    <link rel="stylesheet" href="style9.css">
+    <script src="https://kit.fontawesome.com/32393e27dc.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="fbw-page-images/logo-black.png" alt="logo" id="logo-black" class="header" />
+        <select class="dropdown">
+            <option disabled selected value="perico's">  Perico's Grill + Canteen </option>
+            <option value="bloemen">Br. Bloemen Hall</option>
+            <option value="dlsu-main">DLSU Manila Main</option>
+        </select>
+
+        <div class="form-container">
+            <form action="search-results.html">
+                <i class="fas fa-light fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for a restaurant, cuisine or a dish">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <div class= "navbar">
+            <a href="log-in-page.html" class="button">Log in</a>
+         </div>
+    </div>
+
+    <h5> Home / DLSU Manila Campus / Perico's Grill + Canteen /<span> Potato Giant </span></h5>
+
+    <div class="photos">
+        <div class="first"> </div>
+        <img src="potato-giant-page-images/potato-giant1.jpg" alt="potato-giant-food" id="pg1" />
+        <div class="right-part">
+            <div class="second"> </div>
+            <img src = "potato-giant-page-images/potato-giant2.jpg" alt="potato-giant-food" id="pg2" />
+            <div class="third"> </div>
+            <img src = "potato-giant-page-images/potato-giant3.jpg" alt="potato-giant-food" id="pg3"/>
+        </div>
+    </div>
+
+    <div class="sticky">
+        <div class="title-container">
+            <div class="name-details">
+                <p id="name">Potato Giant </p>
+                <p id="type">Snacks, Fries, Mojo Potatoes, Hashbrowns</p>
+                <p id="location">Ground Floor of St. La Salle Hall in Perico's Grill + Canteen</p>
+                <p id="details"><span>Opening Hours: </span> Unknown </p>
+            </div>
+
+            <div class="rating">
+                <p id="stars">&nbsp;4.5 ⁕&nbsp;</p>
+                <div class="no-of-reviews">
+                    <p id ="dine-in-reviews">2</p>
+                    <a href="">Dine-in Reviews</a>
+                </div>
+            </div>
+        </div>
+
+         <div class="navbar">
+            <a href="#" onclick="showSection('overview', this, event)" class="link not-active-link">Overview</p>
+            <a href="#" onclick="showSection('reviews', this, event)"  class="link not-active-link">Reviews</p>
+            <a href="#" onclick="showSection('photos', this, event)"  class="link not-active-link">Photos</a>
+            <a href="#" onclick="showSection('menu2', this, event)"  class="link not-active-link">Menu</a>
+         </div>
+
+         <hr id="main-line"/>
+    </div>
+
+    <div id="overview" class="section">
+       <div id="summary">
+            <h2>About this place</h2>
+            <h3 id ="menu">Menu</h3>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 1</div>
+                    <img src="potato-giant-page-images/pgmenu1.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="margin-left: 132px;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+            </div>
+
+            <h3>Cuisines</h3>
+            <div id="cuisines">
+                <p>&nbsp;&nbsp;Snacks&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Fries&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Mojo potatoes&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Hashbrowns&nbsp;&nbsp;</p>
+            </div>
+
+            <h3>People Say This Place Is Known For</h3>
+            <p id ="description">Hot Potato Snacks, With Dips, Quick to Eat, Appetizing Unique Options</p>
+        
+            <h3>More Info</h3>
+            <div class="more-info">
+                <div class="info-sep"> 
+                    <div><i class="fas fa-light fa-circle-check" style="color: #3cbe3c;"></i> <p>Snacks With Mini Fork</p></div>
+                    <div><i class="fas fa-light fa-circle-check" style="color: #3cbe3c;"></i> <p>Long waiting time</p></div>
+                </div>
+            </div>
+
+            <div class="establishment-register">
+                <p id="question">Are you the owner of this establishment?</p>
+                <p id="respond">Respond to reviews on it > </p>
+            </div>
+
+            <hr class="review-highlights"/>
+            <h3>Review Highlights</h3>
+
+            <div class="criteria">
+                <img src="potato-giant-page-images/taste.png" alt="taste"/>
+                <p>The restaurant can excel in delivering delicious, flavorful dishes that tantalize the taste buds and leave customers satisfied.</p>
+            </div>
+
+            <hr class="review-highlights"/>
+
+            <h3>Top Reviews</h3>
+
+            <div class="review">
+                <div class="profile">
+                    <img src="potato-giant-page-images/psy.jpg" alt="profile-pic-psy" />
+                    <div class="name-details">
+                        <p id="name">Psy</p>
+                        <p id="no-of-reviews">1 review</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp;5 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">June 15, 2023</p>
+                </div>
+
+                <div class="content">
+                    <p id="title">All-time favorite snack</p>
+                    <div class="positive-or-negative">
+                     <i class="fa-solid fa-thumbs-up" style="color: #38af3a;"></i>
+                     <p id="preference">POSITIVE</p>
+                    </div>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;crispy&nbsp;&nbsp;</p>
+                </div>
+
+                <p id="votes-and-comments"><span id="no-of-votes-helpful">2</span> votes for helpful, <span id="no-of-votes-unhelpful">0</span> votes for unhelpful, <span id="no-of-comments">0</span> comments</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+
+                <hr class="review-highlights2"/>
+            </div>
+
+            <div class="review">
+                <div class="profile">
+                    <img src="potato-giant-page-images/MOMO.jpg" alt="profile-pic-MOMO" />
+                    <div class="name-details">
+                        <p id="name">MOMO</p>
+                        <p id="no-of-reviews">15 reviews</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp;4 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">June 11, 2023</p>
+                </div>
+
+                <div class="content">
+                    <p id="title">Great to eat for all potato lovers!</p>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;incredible taste&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;soggy&nbsp;&nbsp;</p>
+                </div>
+
+                <p id="votes-and-comments"><span id="no-of-votes-helpful">1</span> votes for helpful, <span id="no-of-votes-unhelpful">0</span> votes for unhelpful, <span id="no-of-comments">1</span> comments</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+
+                <hr class="review-highlights2"/>
+            </div>
+
+            <p id="view-all"> View all reviews ></p>
+
+            <div class = "footer">
+                <img src = "pericos-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+        <div id="other-details">
+            <h3 class="contact">Contact Number</h3>
+            <p id="number" class="contact-content contact">None</p>
+
+            <h3 class="contact">Address</h3>
+            <img src="potato-giant-page-images/pericos-location.JPG" alt="pg-location" />
+            <p id="address" class="contact-content contact">Perico's Grill + Canteen, South Wing, 2401, St La Salle Hall, Ground, 1004 Taft Ave, Malate, Manila, Metro Manila</p>
+       
+            <h3 class="contact">Social Media</h3>
+            <p id="social-media" class="contact-content contact">None</p>
+        </div>
+    </div>
+
+    <div id="reviews" class="section">
+        <div id="part1">
+            <p class="name-of-resto">Potato Giant Reviews</p>
+            <div id="all-filters">
+
+                <select class="dropdown-reviews-filters dropdown-reviews-filter1">
+                    <option disabled selected value="all-reviews">  All Reviews </option>
+                    <option value="all-reviews">  Your Reviews </option>
+                </select> 
+
+                <div class="form-container2">
+                    <form>
+                        <i class="fas fa-light fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for a review">
+                        <button type="submit"> Search </button>
+                    </form>
+                </div>
+
+                <i class="fas fa-sharp fa-light fa-filter"></i> 
+
+                <select class="dropdown-reviews-filters dropdown-reviews-filter2">
+                    <option disabled selected value="highest-rated">  Highest Rated </option>
+                    <option value="lowest-rated">  Lowest Rated </option>
+                    <option value="highest-rated">  Newest First </option>
+                    <option value="lowest-rated">  Oldest First </option>
+                </select>
+            </div>
+
+            <div class="review-detailed">
+                <div class="profile">
+                    <img src="potato-giant-page-images/psy.jpg" alt="profile-pic-psy" />
+                    <div class="name-details">
+                        <p id="name">Psy</p>
+                        <p id="no-of-reviews">1 review</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp;5 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">June 15, 2023</p>
+                </div>
+
+                <div class="content">
+                    <p id="title">All-time favorite snack</p>
+                    <div class="positive-or-negative">
+                     <i class="fa-solid fa-thumbs-up" style="color: #38af3a;"></i>
+                     <p id="preference">POSITIVE</p>
+                    </div>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;crispy&nbsp;&nbsp;</p>
+                </div>
+
+                <div class="review-content">
+                    I love eating fries.. theirs is my favorite snack of all-time. Just the perfect kind of crisp. I like the barbeque flavor.
+                </div>
+
+
+                <div class="review-photos">
+                    <img src="potato-giant-page-images/barbecue.jpg" alt="barbecue" />
+                 </div>
+
+                <p id="votes-and-comments"><span id="no-of-votes-helpful">2</span> votes for helpful, <span id="no-of-votes-unhelpful">0</span> votes for unhelpful, <span id="no-of-comments">0</span> comments</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+ 
+                 <hr class="review-highlights2"/>
+            </div>
+
+            <div class="review-detailed">
+                <div class="profile">
+                    <img src="potato-giant-page-images/MOMO.jpg" alt="profile-pic-MOMO" />
+                    <div class="name-details">
+                        <p id="name">MOMO</p>
+                        <p id="no-of-reviews">15 reviews</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp;4 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">June 11, 2023</p>
+                </div>
+
+                <div class="content">
+                    <p id="title">Great to eat for all potato lovers!</p>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;incredible taste&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;soggy&nbsp;&nbsp;</p>
+                </div>
+                <div class="review-content">
+                    Potato lover here! 😄 I tried the cheesy bacon potpots and fries, cheese flavor, and they do taste incredible. However, they got soggy too fast, 
+                    which kind of ruined the experience for me
+                </div>
+
+                <div class="review-photos">
+                    <img src="potato-giant-page-images/cheesy-bacon.jpg" alt="cheesy-bacon" />
+                    <img src="potato-giant-page-images/cheese.jpg" alt="cheese" />
+                 </div>
+
+                 <p id="votes-and-comments"><span id="no-of-votes-helpful">1</span> votes for helpful, <span id="no-of-votes-unhelpful">0</span> votes for unhelpful, <span id="no-of-comments">1</span> comments</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+
+                <hr class="review-highlights2"/>
+
+                <p class="label-for-comments"> Comments </p>
+
+                 <div class="comments">
+                        <div class="comment-profile">
+                            <img src="potato-giant-page-images/jin.jpg" alt="jin" />
+                            <p id="commentor">Jin</p>
+                            <hr />
+                            <div>
+                                <p id="comment"> Same experience here... The fries got soggy 😣</p>
+                                <p id="sent-details"> Sent June 11, 2023</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div id="no-of-pages">
+                <p id="no-1">&nbsp;&nbsp;1&nbsp;&nbsp;</p>
+            </div>
+
+            <hr class="review-highlights3"/>
+
+            <div class = "footer">
+                <img src = "pericos-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="photos" class="section">
+        <div>
+            <div id="part2">
+                <p class="name-of-resto">Potato Giant Photos</p>
+                <p class="img-category">&nbsp;All (<span id="num">3</span>)&nbsp;</p>
+                <div class="images-set">
+                    <img src="potato-giant-page-images/cheese.jpg" />
+                    <img src="potato-giant-page-images/cheesy-bacon.jpg" />
+                    <img src="potato-giant-page-images/barbecue.jpg" />
+                </div>
+
+                <p class="img-category">&nbsp;Food (<span id="num">3</span>)&nbsp;</p>
+                <div class="images-set">
+                    <img src="potato-giant-page-images/cheese.jpg" />
+                    <img src="potato-giant-page-images/cheesy-bacon.jpg" />
+                    <img src="potato-giant-page-images/barbecue.jpg" />
+                </div>
+
+                <p class="img-category">&nbsp;Ambience (<span id="num">0</span>)&nbsp;</p>
+                <p class="none">None</p>
+            </div>
+            <div class = "footer">
+                <img src = "potato-giant-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu2" class="section">
+        <div id="part3">
+            <p class="name-of-resto">Potato Giant Menu </p> 
+            <div id="menu-photos">
+                <img src="potato-giant-page-images/pgmenu1.jpg" alt="pgmenu1"/>
+            </div>
+
+            <div class = "footer">
+                <img src = "potato-giant-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

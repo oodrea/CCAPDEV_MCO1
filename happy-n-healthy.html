@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animo La Salle</title>
+    <link rel="stylesheet" href="style16.css">
+    <script src="https://kit.fontawesome.com/32393e27dc.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="hnh-page-images/logo-black.png" alt="logo" id="logo-black" class="header" />
+        <select class="dropdown">
+            <option disabled selected value="bloemen">Br. Bloemen Hall</option>
+            <option value="perico's">  Perico's Grill + Canteen </option>
+            <option value="dlsu-main">DLSU Manila Main</option>
+        </select>
+
+        <div class="form-container">
+            <form action="search-results.html">
+                <i class="fas fa-light fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for a restaurant, cuisine or a dish">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <div class= "navbar">
+            <a href="log-in-page.html" class="button">Log in</a>
+         </div>
+    </div>
+
+    <h5> Home / DLSU Manila Campus / Br.Bloemen Hall / <span> Happy N' Healthy </span></h5>
+
+    <div class="photos">
+        <div class="first"> </div>
+        <img src="hnh-page-images/hnh-food-1.jpg" alt="hnh-food" id="hnh1" />
+        <div class="right-part">
+            <div class="second"> </div>
+            <img src = "hnh-page-images/hnh-food-2.png" alt="hnh-food" id="hnh2" />
+            <div class="third"> </div>
+            <img src = "hnh-page-images/hnh-food-3.png" alt="hnh-food" id="hnh3"/>
+        </div>
+    </div>
+
+    <div class="sticky">
+        <div class="title-container">
+            <div class="name-details">
+                <p id="name"> Happy N' Healthy </p>
+                <p id="type">Veggies, Pasta, Chicken, Beef, Shakes, Juices</p>
+                <p id="location">Br. Bloemen Hall</p>
+                <p id="details"><span>Opening Hours: </span> 8am - 7pm </p>
+            </div>
+
+            <div class="rating">
+                <p id="stars">&nbsp;4.2 ⁕&nbsp;</p>
+                <div class="no-of-reviews">
+                    <p id ="dine-in-reviews">4</p>
+                    <p>Dine-in Reviews</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="navbar">
+            <a href="#" onclick="showSection('overview', this, event)" class="link not-active-link">Overview</p>
+            <a href="#" onclick="showSection('reviews', this, event)"  class="link not-active-link">Reviews</p>
+            <a href="#" onclick="showSection('photos', this, event)"  class="link not-active-link">Photos</a>
+            <a href="#" onclick="showSection('menu2', this, event)"  class="link not-active-link">Menu</a>
+         </div>
+
+         <hr id="main-line"/>
+    </div>
+
+    <div id="overview" class="section">
+       <div id="summary">
+            <h2>About this place</h2>
+            <h3 id ="menu">Menu</h3>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 1</div>
+                    <img src="hnh-page-images/hnh-menu1.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="margin-left: 132px;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+            </div>
+
+            <h3>Cuisines</h3>
+            <div id="cuisines">
+                <p>&nbsp;&nbsp;Veggies&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Pasta&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Chicken&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Beef&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Shakes&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Juices&nbsp;&nbsp;</p>
+            </div>
+
+            <h3>People Say This Place Is Known For</h3>
+            <p id ="description">Healthy, balanced meals, Quality ingredients, Refreshing coolers</p>
+        
+            <h3>More Info</h3>
+            <div class="more-info">
+                <div class="info-sep"> 
+                    <div><i class="fas fa-light fa-circle-check" style="color: #3cbe3c;"></i> <p>Good, Homely food</p></div>
+                    <div><i class="fas fa-light fa-circle-check" style="color: #3cbe3c;"></i> <p>Elaborate Menu</p></div>
+                </div>
+
+                <div class="info-sep"> 
+                    <div><i class="fas fa-light fa-circle-check" style="color: #3cbe3c;"></i> <p>Kind Staff</p></div>
+                </div>
+            </div>
+
+            <div class="establishment-register">
+                <p id="question">Are you the owner of this establishment?</p>
+                <p id="respond">Respond to reviews on it > </p>
+            </div>
+
+            <hr class="review-highlights"/>
+            <h3>Review Highlights</h3>
+
+            <div class="criteria">
+                <img src="hnh-page-images/standard.png" alt="standard"/>
+                <p>The restaurant can uphold exceptional culinary standards, using high-quality ingredients to consistently deliver flavorful and well-executed dishes.</p>
+            </div>
+
+            <hr class="review-highlights"/>
+
+            <h3>Top Reviews</h3>
+
+            <div class="review">
+                <div class="profile">
+                    <img src="hnh-page-images/profile-pic-aria.jpg" alt="profile-pic-aria" />
+                    <div class="name-details">
+                        <p id="name">Aria</p>
+                        <p id="no-of-reviews">6 reviews</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp;5 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">June 05, 2023</p>
+                </div>
+
+                <div class="content">
+                    <p id="title"> All Health Conscious, Listen!</p>
+                    <div class="positive-or-negative">
+                     <i class="fa-solid fa-thumbs-up" style="color: #38af3a;"></i>
+                     <p id="preference">POSITIVE</p>
+                    </div>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;quick service&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;well-cooked vegetables and meat&nbsp;&nbsp;</p>
+                </div>
+
+                <p id="votes-and-comments"><span id="no-of-votes-helpful">5</span> votes for helpful, <span id="no-of-votes-unhelpful">2</span> votes for unhelpful, <span id="no-of-comments">0</span> comments</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+
+                <hr class="review-highlights2"/>
+            </div>
+
+            <div class="review">
+                <div class="profile">
+                    <img src="hnh-page-images/tzuyu.jpg" alt="tzuyu" />
+                    <div class="name-details">
+                        <p id="name">Tzuyu</p>
+                        <p id="no-of-reviews">6 reviews</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp;4 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">June 04, 2023</p>
+                </div>
+
+                <div class="content">
+                    <p id="title">Good food but need more seasoning</p>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;lack of seasoning&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;well-prepared and served&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;fresh juice&nbsp;&nbsp;</p>
+                </div>
+
+                <p id="votes-and-comments"><span id="no-of-votes-helpful">8</span> votes for helpful, <span id="no-of-votes-unhelpful">0</span> votes for unhelpful, <span id="no-of-comments">1</span> comment</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+
+                <hr class="review-highlights2"/>
+            </div>
+
+            <div class="review">
+                <div class="profile">
+                    <img src="hnh-page-images/MOMO.jpg" alt="momo" />
+                    <div class="name-details">
+                        <p id="name">MOMO</p>
+                        <p id="no-of-reviews">15 reviews</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp; 4 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">one month ago</p>
+                </div>
+
+                <div class="content">
+                    <p id="title"> Coldness can ruin the experience</p>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;prefer hot or warm food&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;pleasant taste&nbsp;&nbsp;</p>
+                </div>
+
+                <p id="votes-and-comments"><span id="no-of-votes-helpful">1</span> votes for helpful, <span id="no-of-votes-unhelpful">3</span> votes for unhelpful, <span id="no-of-comments">0</span> comments</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+
+                <hr class="review-highlights2"/>
+            </div>
+
+            <p id="view-all"> View all reviews ></p>
+
+            <div class = "footer">
+                <img src = "hnh-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+        <div id="other-details">
+            <h3 class="contact">Contact Number</h3>
+            <p id="number" class="contact-content contact">None</p>
+
+            <h3 class="contact">Address</h3>
+            <img src="hnh-page-images/bloemen-location.JPG" alt="bloemen-location" />
+            <p id="address" class="contact-content contact">Br. Bloemen Hall, De La Salle University, 2401 Taft Ave, Malate, Manila, 1004 Metro Manila</p>
+       
+            <h3 class="contact">Social Media</h3>
+            <div class="social-media">
+                <a href="https://www.facebook.com/HappyNHealthyPH/" target ="_blank" id="facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="reviews" class="section">
+        <div id="part1">
+            <p class="name-of-resto">Happy N' Healthy Reviews</p>
+            <div id="all-filters">
+
+                <select class="dropdown-reviews-filters dropdown-reviews-filter1">
+                    <option disabled selected value="all-reviews">  All Reviews </option>
+                    <option value="all-reviews">  Your Reviews </option>
+                </select> 
+
+                <div class="form-container2">
+                    <form>
+                        <i class="fas fa-light fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for a review">
+                        <button type="submit"> Search </button>
+                    </form>
+                </div>
+
+                <i class="fas fa-sharp fa-light fa-filter"></i> 
+
+                <select class="dropdown-reviews-filters dropdown-reviews-filter2">
+                    <option disabled selected value="highest-rated">  Highest Rated </option>
+                    <option value="lowest-rated">  Lowest Rated </option>
+                    <option value="highest-rated">  Newest First </option>
+                    <option value="lowest-rated">  Oldest First </option>
+                </select>
+            </div>
+
+            <div class="review-detailed">
+                <div class="profile">
+                    <img src="hnh-page-images/profile-pic-aria.jpg" alt="profile-pic-aria" />
+                    <div class="name-details">
+                        <p id="name">Aria</p>
+                        <p id="no-of-reviews">6 reviews</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp;5 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">June 05, 2023</p>
+                </div>
+
+                <div class="content">
+                    <p id="title"> All Health Conscious, Listen!</p>
+                    <div class="positive-or-negative">
+                     <i class="fa-solid fa-thumbs-up" style="color: #38af3a;"></i>
+                     <p id="preference">POSITIVE</p>
+                    </div>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;quick service&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;well-cooked vegetables and meat&nbsp;&nbsp;</p>
+                </div>
+
+                <div class="review-content">
+                   This restaurant is perfect for those who are health conscious like me. The vegetables and meat are well-cooked. Healthy food can be tasty 
+                   indeed and they prove this 😄 My favorite is the Grilled Tuna Meal with Sweet Potato.. Yuuum! Plus, their service is also quick thanks to the kind staff 😍
+                </div>
+
+                <div class="review-photos">
+                    <img src="hnh-page-images/grilled-tuna.jpg" alt="grilled-tuna" />
+                 </div>
+
+                <p id="votes-and-comments"><span id="no-of-votes-helpful">5</span> votes for helpful, <span id="no-of-votes-unhelpful">2</span> votes for unhelpful, <span id="no-of-comments">0</span> comments</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+
+                <hr class="review-highlights2"/>
+            </div>
+
+            <div class="review-detailed">
+                <div class="profile">
+                    <img src="hnh-page-images/tzuyu.jpg" alt="tzuyu" />
+                    <div class="name-details">
+                        <p id="name">Tzuyu</p>
+                        <p id="no-of-reviews">6 reviews</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp;4 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">June 04, 2023</p>
+                </div>
+
+                <div class="content">
+                    <p id="title">Good food but need more seasoning</p>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;lack of seasoning&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;well-prepared and served&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;fresh juice&nbsp;&nbsp;</p>
+                </div>
+
+                <div class="review-content">
+                    The food was good but I found that the seasoning was a bit lacking. Moreover, it was also well-prepared and served in a container.
+                    I also drank their honey lemon juice and I can guarantee it was fresh. 
+                </div>
+
+                <div class="review-photos">
+                    <img src="hnh-page-images/lemon-juice.jpg" alt="lemon-juice" />
+                 </div>
+
+                 <p id="votes-and-comments"><span id="no-of-votes-helpful">8</span> votes for helpful, <span id="no-of-votes-unhelpful">0</span> votes for unhelpful, <span id="no-of-comments">1</span> comment</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+
+                <hr class="review-highlights2"/>
+
+                 <p class="label-for-comments"> Comments </p>
+
+                 <div class="comments">
+                        <div class="comment-profile">
+                            <img src="hnh-page-images/rm.jfif" alt="rm" />
+                            <p id="commentor">RM</p>
+                            <hr />
+                            <div>
+                                <p id="comment"> Underrated tbh.. the best honey lemon juice in DLSU for real 😚</p>
+                                <p id="sent-details"> Sent June 05, 2023</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="review-detailed">
+                <div class="profile">
+                    <img src="hnh-page-images/MOMO.jpg" alt="momo" />
+                    <div class="name-details">
+                        <p id="name">MOMO</p>
+                        <p id="no-of-reviews">15 reviews</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp; 4 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">one month ago</p>
+                </div>
+
+                <div class="content">
+                    <p id="title"> Coldness can ruin the experience</p>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;prefer hot or warm food&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;pleasant taste&nbsp;&nbsp;</p>
+                </div>
+
+                <div class="review-content">
+                   Don't get me wrong. I love their food and the taste is pleasant,
+                   but they could certainly warm the meals up for a more enjoyable eating experience..just a suggestion hehe 🤗
+                </div>
+
+                <p id="votes-and-comments"><span id="no-of-votes-helpful">1</span> votes for helpful, <span id="no-of-votes-unhelpful">3</span> votes for unhelpful, <span id="no-of-comments">0</span> comments</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+            </div>
+
+            
+            <div class="review-detailed">
+                <div class="profile">
+                    <img src="hnh-page-images/v.jpg" alt="profile-pic-v" />
+                    <div class="name-details">
+                        <p id="name">Taehyung</p>
+                        <p id="no-of-reviews">10 reviews</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp; 4 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">one month ago</p>
+                </div>
+
+                <div class="content">
+                    <p id="title"> I love to eat my veggies!</p>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;different approach to cooking veggies&nbsp;&nbsp;</p>
+                </div>
+
+                <div class="review-content">
+                   Boiled veggies are nice. They suit well with the grilled meals, but a different approach to cooking the veggies
+                   could definitely elevate the taste of the meals. No longer need to add soy sauce on my veggies hahahahaha
+                </div>
+
+                
+                <div class="review-photos">
+                    <img src="hnh-page-images/sauce-veggies.jpg" alt="sauce-on-veggies" />
+                 </div>
+
+                <p id="votes-and-comments"><span id="no-of-votes-helpful">1</span> votes for helpful, <span id="no-of-votes-unhelpful">1</span> votes for unhelpful, <span id="no-of-comments">2</span> comments</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+
+                <hr class="review-highlights2"/>
+
+                 <p class="label-for-comments"> Comments </p>
+
+                 <div class="comments">
+                        <div class="comment-profile">
+                            <img src="hnh-page-images/jihyo.png" alt="jihyo" />
+                            <p id="commentor">Jihyo</p>
+                            <hr />
+                            <div>
+                                <p id="comment"> Great suggestion hahahaha 😁</p>
+                                <p id="sent-details"> Sent May 09,2023</p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="comments">
+                        <div class="comment-profile">
+                            <img src="hnh-page-images/iu.jpg" alt="IU" />
+                            <p id="commentor">IU</p>
+                            <hr />
+                            <div>
+                                <p id="comment"> I feel like the boiled veggies are good..but yeah, they could add more seasoning to it</p>
+                                <p id="sent-details"> Sent May 09,2023</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <hr class="review-highlights3"/>
+
+            <div id="no-of-pages">
+                <p id="no-1">&nbsp;&nbsp;1&nbsp;&nbsp;</p>
+            </div>
+
+            <hr class="review-highlights3"/>
+
+            <div class = "footer">
+                <img src = "hnh-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="photos" class="section">
+        <div>
+            <div id="part2">
+                <p class="name-of-resto">Happy N' Healthy Photos</p>
+                <p class="img-category">&nbsp;All (<span id="num">3</span>)&nbsp;</p>
+                <div class="images-set">
+                    <img src="hnh-page-images/grilled-tuna.jpg" />
+                    <img src="hnh-page-images/lemon-juice.jpg" />
+                    <img src="hnh-page-images/sauce-veggies.jpg" />
+                </div>
+
+                <p class="img-category">&nbsp;Food (<span id="num">3</span>)&nbsp;</p>
+                <div class="images-set">
+                    <img src="hnh-page-images/grilled-tuna.jpg" />
+                    <img src="hnh-page-images/lemon-juice.jpg" />
+                    <img src="hnh-page-images/sauce-veggies.jpg" />
+                </div>
+
+                <p class="img-category">&nbsp;Ambience (<span id="num">0</span>)&nbsp;</p>
+                <p class="none">None</p>
+            </div>
+            <div class = "footer">
+                <img src = "hnh-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu2" class="section">
+        <div id="part3">
+            <p class="name-of-resto">Happy N' Healthy Menu </p> 
+            <div id="menu-photos">
+                <img src="hnh-page-images/hnh-menu1.jpg" alt="hnh-menu1"/>
+            </div>
+
+            <div class = "footer">
+                <img src = "hnh-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

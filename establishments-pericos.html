@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animo La Salle</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://kit.fontawesome.com/32393e27dc.js" crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="establishment-pericos-page-images/logo-black.png" alt="logo" id="logo-black" class="header" />
+        <select class="dropdown" onchange="redirectOption(this)">
+            <option selected value="pericos">  Perico's Grill + Canteen </option>
+            <option value="bloemen">Br. Bloemen Hall</option>
+            <option value="dlsu-main">DLSU Manila Main</option>
+        </select>
+
+        <div class="form-container">
+            <form id="searchForm" action="javascript:performSearch()">
+                <i class="fas fa-light fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search for a restaurant, cuisine or a dish" >
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+
+        <div class= "navbar">
+            <a href="log-in-page.html" class="button">Log in</a>
+         </div>
+    </div>
+
+
+<div id="pericos" class="content-block">
+    <h5> Home / DLSU Manila Campus /<span> Perico's Grill + Canteen Restaurants</span></h5>
+    <div class="dine-in">
+        <img src="establishment-pericos-page-images/dine-in.png" alt="dine-in-img" id="dine-in-img" />
+        <p id="dine-in-text"> Dine-in </p>
+    </div>
+
+    <hr id="dine-in-line" />
+    <hr id="main-line"/>
+
+    <div class="sticky">
+        <button id="filters"><i class="fas fa-sharp fa-light fa-filter"></i>Filters</button>
+    </div>
+
+    <div class="gallery-wrap">
+        <h3>What are you craving?</h3> <br/>
+        <img src="establishment-pericos-page-images/backbtn.png" alt="backBtn" id="backBtn" />
+        <div class="gallery">
+            <div>
+                <span><img src="establishment-pericos-page-images/waffles.png" alt="waffles" id="waffles"> <p id="waffle-tag">Waffles</p></span>
+                <span><img src="establishment-pericos-page-images/takoyaki.png" alt="takoyaki" id="takoyaki"><p id="takoyaki-tag">Takoyaki</p></span>
+                <span><img src="establishment-pericos-page-images/ice cream.png" alt="ice cream" id="ice cream"><p id="ice-cream-tag">Ice Cream</p></span>
+                <span><img src="establishment-pericos-page-images/coffee.png" alt="coffee" id="coffee"><p id="coffee-tag">Coffee</p></span>
+            </div>
+
+            <div>
+                <span><img src="establishment-pericos-page-images/fries.png" alt="fries" id="fries"><p id="fries-tag">Fries</p></span>
+                <span><img src="establishment-pericos-page-images/pasta.png" alt="pasta" id="pasta"><p id="pasta-tag">Pasta</p></span>
+                <span><img src="establishment-pericos-page-images/tapa.png" alt="tapa" id="tapa"><p id="tapa-tag">Tapa</p></span>
+                <span><img src="establishment-pericos-page-images/chicken.png" alt="chicken" id="chicken"><p id="chicken-tag">Chicken</p></span>
+            </div>
+        </div>
+        <img src="establishment-pericos-page-images/nextbtn.png" alt="nextBtn" id="nextBtn" />
+    </div>
+
+    <div class="top-restos">
+        <h2> Top restaurants for you </h2>
+        <div class="restos-gallery">
+            <div><img src="establishment-pericos-page-images/pericos.jpg" alt="pericos" id="pericos"><p id="pericos-tag">Perico's Grill</p></div>
+            <div><img src="establishment-pericos-page-images/famous-belgian.jpg" alt="famous-belgian" id="famous-belgian"><p id="famous-belgian-tag">Famous Belgian Waffles</p></div>
+            <div><img src="establishment-pericos-page-images/potato-giant.jpg" alt="potato-giant" id="potato-giant"><p id="potato-giant-tag">Potato Giant</p></div>
+        </div>
+    </div>
+
+    <h3 id="all-food">All Establishments in Perico's Grill + Canteen</h3> <br/>
+
+    <div class="establishments">
+        <a href="perico's.html">
+        <div class="restaurant">
+            <img src="establishment-pericos-page-images/pericos-food.jpg" alt="pericos-food" id="pericos-food" />
+            <div class="criteria">
+                <p>&nbsp;Variety&nbsp;</p>
+                <p>&nbsp;Standard&nbsp;</p>
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Perico's Grill</h3>
+                <p id="rating-pericos">4.8 ⁎ </p>
+            </div>
+            <p class="type">Filipino, Pasta, Tapa, Chicken, Pork, Seafood</p>
+        </div>
+        </a>
+
+        <a href="tauyami-takoyaki.html">
+        <div class="restaurant">
+            <img src="establishment-pericos-page-images/tauyami-food.jpg" alt="tauyami-food" id="tauyami-food" />
+            <div class="name">
+                <h3>Tauyami Takoyaki</h3>
+                <p id="rating-takoyaki">3.0 ⁎ </p>
+            </div>
+            <p class="type">Japanese, Street food, Snacks, Octopus</p>
+        </div>
+        </a>
+
+        <a href="potato-giant.html">
+        <div class="restaurant">
+            <img src="establishment-pericos-page-images/potato-giant-food.jpg" alt="potato-giant-food" id="potato-giant-food" />
+            <div class="criteria">
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Potato Giant</h3>
+                <p id="rating-potato-giant">4.5 ⁎ </p>
+            </div>
+            <p class="type">Snacks, Fries, Mojo Potatoes, Hashbrowns</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="establishments">
+        <a href="famous-belgian-waffle.html">
+        <div class="restaurant">
+            <img src="establishment-pericos-page-images/fbw-food.jpg" alt="fbw-food" id="fbw-food" />
+            <div class="criteria">
+                <p>&nbsp;Variety&nbsp;</p>
+                <p>&nbsp;Affordability&nbsp;</p>
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Famous Belgian Waffles</h3>
+                <p id="rating-fbw">4.7 ⁎ </p>
+            </div>
+            <p class="type">Breakfast, Sweets, Savory, Coffee</p>
+        </div>
+        </a>
+
+        <a href="ezpresso.html">
+        <div class="restaurant">
+            <img src="establishment-pericos-page-images/ezpresso-food.jpg" alt="ezpresso-food" id="ezpresso-food" />
+            <div class="criteria">
+                <p>&nbsp;Affordability&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Ezpresso</h3>
+                <p id="rating-ezpresso">4.0 ⁎ </p>
+            </div>
+            <p class="type">Cafe, Cold, Hot, Beverages</p>
+        </div>
+        </a>
+
+        <a href="aice-ice-cream.html">
+        <div class="restaurant">
+            <img src="establishment-pericos-page-images/aice-food.jpg" alt="aice-food" id="aice-food" />
+            <div class="criteria">
+                <p>&nbsp;Affordability&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Aice Ice Cream</h3>
+                <p id="rating-aice">4.3 ⁎ </p>
+            </div>
+            <p class="type">Sweets, Cold</p>
+        </div>
+        </a>
+    </div>
+
+    <div class = "footer">
+        <img src = "establishment-pericos-page-images/logo-black.png" alt="logo" id="logo-black" />
+        <hr />
+        <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+    </div>
+</div>
+
+    <script>
+
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        });
+
+        nextBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 270;
+        });
+
+        backBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 270;
+        });
+
+    </script>
+</body>
+</html>

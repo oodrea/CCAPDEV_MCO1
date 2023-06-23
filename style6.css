@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --primary-font: 'Poppins', 'Trebuchet MS', sans-serif;
+}
+
+body{
+    margin: 0px;
+    overflow-x: hidden; 
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+}
+
+.header #logo-black{
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    width: 200px;
+    height: 200px;
+}
+
+.header .dropdown{
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  padding: 8px 12px;
+  color: gray;
+  background-color: white;
+  border: 0;
+  box-shadow: 0px 3px 5px rgb(202, 202, 202);
+  cursor: pointer;
+  border-radius: 5px;
+  padding-right: 30px;
+  height: 60px;
+  font-family: var(--primary-font);
+  font-size: 14px;
+}
+
+.header .dropdown:focus,.header .dropdown:hover {
+  outline: none;
+  border: 1px solid #bbbbbb;
+}
+
+.header .dropdown option {
+  background: #ffffff;
+}
+
+.header .form-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .navbar{
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .navbar a{
+  text-decoration: none;
+  font-family: var(--primary-font);
+  color: #173518;
+  font-size: 17px;
+  padding: 30px;
+  padding: 20px 20px;
+  position: relative;
+}
+
+.header .navbar a:after{
+  content: "";
+  position: absolute;
+  background-color: #173518;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.header .navbar a:hover{
+  color: white;
+  text-shadow: 0 0 5px #173518;
+}
+
+.header .navbar a:hover:after{
+  width: 100%;
+}
+
+h5{
+    font-family: var(--primary-font);
+    margin-top: -10px;
+    font-size: 12px;
+    font-weight: 300;
+    height: 0px;
+    margin-left: 71px;
+    color: gray;
+}
+  
+h5 span{
+    color: rgb(187, 185, 185);
+}
+
+#main-line{
+  height: 2px;
+  color: rgb(223, 223, 223);
+  opacity: 25%;
+}
+
+.form-container form{
+  background: #fff;
+  position: absolute;
+  top: 30px;
+  left: 430px;
+  width: 550px;
+  height: 55px;
+  display: flex;
+  border: 1px solid #bbbbbb;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 60px;
+}
+
+.form-container form input{
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: var(--primary-font);
+  color: rgb(74, 73, 73);
+}
+
+.form-container form input::placeholder{
+  color: gray;
+}
+
+.form-container form button{
+  padding: 10px 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: var(--primary-font);
+  color: white;
+  background-color: #333333;
+}
+
+.form-container form .fa-light{
+  align-self: center;
+  padding: 10px 20px;
+  color: gray;
+}
+
+.fa-sharp{
+  align-self: center;
+  color: gray;
+}
+
+.dine-in{
+  position: absolute;
+  margin-top: -7px;
+  margin-left: 75px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dine-in #dine-in-img{
+    width: 90px;
+    height: 90px;
+  }
+
+.dine-in #dine-in-text{
+    font-family: var(--primary-font);
+    font-size: 27px;
+    color: #008000;
+}
+
+#dine-in-line{
+  margin-top: 100px;
+  width: 220px;
+  height: 2px;
+  background-color: green;
+  border: 0;
+  border-color: green;
+  margin-left: 80px;
+}
+
+#main-line{
+  margin-top: -8px;
+  background-color: rgb(202, 202, 202);
+  border-color: rgb(202, 202, 202);
+  height: 1px;
+  border: 0;
+}
+
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  transition: top 0.5s ease-in-out 0s;
+  border-bottom: 1px solid rgb(250, 247, 247);
+  z-index: 9999;
+}
+
+#filters{
+  font-family: var(--primary-font);
+  font-size: 14px;
+  border: 1px solid rgb(184, 183, 183);
+  box-shadow: 0px 0px 5px rgb(202, 202, 202); 
+  border-radius: 5px;
+  color:rgb(192, 192, 192);
+  background-color: white;
+  font-weight: 300;
+  height: 35px;
+  width: 80px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
+
+#filters:hover{
+  background-color:rgb(245, 241, 241) !important;
+}
+
+#filters i{
+  padding: 5px;
+  padding-left: 2px;
+}
+
+.gallery{
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 120px;
+}
+
+.gallery div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+
+.gallery div img{
+  width:200px;
+  height: 200px;
+  filter: grayscale(100%);
+  transition: transform 0.5s;
+}
+
+.gallery div img:hover{
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.gallery p{
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.gallery #waffle-tag, #chicken-tag{
+    margin-left: 60px;
+}
+  
+.gallery #takoyaki-tag{
+    margin-left: 55px;
+}
+  
+.gallery #ice-cream-tag{
+    margin-left: 50px;
+}
+  
+.gallery #coffee-tag, #jamaican-pattie-tag{
+    margin-left: 70px;
+}
+  
+.gallery #tapa-tag, #curry-tag, #salad-tag{
+    margin-left: 75px;
+}
+
+.gallery #fries-tag, #pasta-tag{
+    margin-left: 80px;
+}
+
+.gallery #fish-tag, #tea-tag{
+    margin-left: 85px;
+}
+
+.gallery #milktea-tag{
+  margin-left: 65px;
+}
+
+.gallery #rice-bowl-tag{
+  margin-left: 53px;
+}
+
+.gallery #shawarma-tag{
+  margin-left: 49px;
+}
+
+.gallery #veggies-tag{
+    margin-left: 62px;
+}
+
+.gallery #sandwich-tag{
+    margin-left: 15px;
+}
+  
+.gallery #smoothie-bowl-tag{
+    margin-left: 25px;
+}
+  
+.gallery #street-food-tag{
+    margin-left: 45px;
+}
+  
+.gallery #shake-tag{
+    margin-left: 40px;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}  
+
+.gallery-wrap{
+  background-color: rgb(250, 247, 247);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+  margin-top: 30px;
+  height: 5;
+}
+
+
+.gallery-wrap h3{
+  position: absolute;
+  top: 400px;
+  left: 50px;
+  font-size: 30px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  margin-left: 80px;
+}
+
+.gallery-wrap #backBtn, .gallery-wrap #nextBtn{
+  width: 40px;
+  height: 40px;
+  margin-top: 70px;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px rgb(108, 173, 132); 
+}
+
+.top-restos{
+  margin-top: -80px;
+}
+
+.top-restos h2{
+  font-family: var(--primary-font);
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 140px;
+}
+
+.top-restos .restos-gallery{
+  display: flex;
+  flex-direction: row;
+  margin-left: 180px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 25px;
+  padding: 10px;
+  flex: none;
+}
+
+.top-restos .restos-gallery div{
+  width: 200px;
+  height: 200px;
+  border-radius: 120px;
+}
+
+.top-restos .restos-gallery div img{
+  width: 150px;
+  height: 150px;
+  border-radius: 120px;
+  border: none;
+  box-shadow: 0px 0px 5px rgb(202, 202, 202);
+}
+
+.restos-gallery p{
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-left: -50px;
+  margin-top: 5px;
+}
+
+.restos-gallery #famous-belgian-tag{
+  margin-left: -45px;
+}
+
+#all-food{
+  font-family: var(--primary-font);
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 140px;
+  margin-top: 70px;
+}
+
+.establishments{
+  margin-left: 45px;
+  display: flex;
+  flex-direction: row;
+}
+
+.establishments .restaurant img{
+  width: 300px;
+  height: 250px;
+  border-radius: 15px;
+  image-rendering: crisp-edges;
+}
+
+.establishments .restaurant{
+    margin-left: 50px;
+    padding: 15px;
+    margin-bottom: 25px;
+    width: 300px;
+    position: relative;
+}
+
+.establishments a{
+  text-decoration: none;
+  color: black;
+}
+  
+.establishments .restaurant .criteria{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    display: flex;
+    flex-direction: row;
+}
+  
+.establishments .restaurant .criteria p{
+    font-size: 10px;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    color: rgba(224, 224, 224, 0.491);
+    background-color: rgba(0, 0, 0, 0.434);
+    border-radius: 3px;
+    margin-left: 4px;
+}
+  
+.establishments .restaurant:hover{
+  box-shadow: 0px 3px 5px rgb(165, 165, 165);
+  border-radius: 15px;
+}
+
+.establishments .restaurant .name {
+  font-family: var(--primary-font);
+  margin-top: 2px;
+  display: flex;
+  flex-direction: row;
+ }
+
+.establishments .restaurant .name h3{
+ font-size: 18px;
+ font-weight: 400;
+ width: 300px;
+}
+
+.establishments .restaurant .name p{
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  background-color: #008000;
+  border-radius: 5px;
+  height: 20px;
+  width: 35px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 158px;
+ }
+
+ .establishments .restaurant .name p{
+  margin-left: 5px;
+ }
+
+ .establishments .restaurant .type{
+  font-family: var(--primary-font);
+  font-size: 13px;
+  color:rgb(174, 173, 173);
+  margin-top: -15px;
+ }
+
+ .footer{
+  height: 300px;
+  margin-top: 100px;
+  background: rgb(235, 233, 233);
+}
+
+.footer #logo-black{
+  position: relative;
+  top: 0px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+}
+
+.footer hr{
+  margin-left: 100px;
+  width: 1100px;
+  background-color: #173518;
+  border-color: #173518;
+  opacity: 25%;
+}
+
+.footer #closing{
+  color: #173518;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 100px;
+}

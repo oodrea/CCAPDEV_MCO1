@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animo La Salle</title>
+    <link rel="stylesheet" href="style6.css">
+    <script src="https://kit.fontawesome.com/32393e27dc.js" crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="establishment-dlsu-main-page-images/logo-black.png" alt="logo" id="logo-black" class="header" />
+        <select class="dropdown" onchange="redirectOption(this)">
+            <option selected value="dlsu-main">DLSU Manila Main</option> 
+            <option value="pericos">Perico's Grill + Canteen</option>
+            <option value="bloemen">Br. Bloemen Hall</option>
+        </select>
+
+        <div class="form-container">
+            <form id="searchForm" action="javascript:performSearch()">
+                <i class="fas fa-light fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search for a restaurant, cuisine or a dish" >
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+
+        <div class= "navbar">
+            <a href="log-in-page.html" class="button">Log in</a>
+         </div>
+    </div>
+
+    <h5> Home /<span> DLSU Manila Main Restaurants</span></h5>
+
+    <div class="dine-in">
+        <img src="establishment-dlsu-main-page-images/dine-in.png" alt="dine-in-img" id="dine-in-img" />
+        <p id="dine-in-text"> Dine-in </p>
+    </div>
+
+    <hr id="dine-in-line" />
+    <hr id="main-line"/>
+
+    <div class="sticky">
+        <button id="filters"><i class="fas fa-sharp fa-light fa-filter"></i>Filters</button>
+    </div>
+
+    <div class="gallery-wrap">
+        <h3>What are you craving?</h3> <br/>
+        <img src="establishment-dlsu-main-page-images/backbtn.png" alt="backBtn" id="backBtn" />
+        <div class="gallery">
+            <div>
+                <span><img src="establishment-dlsu-main-page-images/waffles.png" alt="waffles" id="waffles"> <p id="waffle-tag">Waffles</p></span>
+                <span><img src="establishment-dlsu-main-page-images/takoyaki.png" alt="takoyaki" id="takoyaki"><p id="takoyaki-tag">Takoyaki</p></span>
+                <span><img src="establishment-dlsu-main-page-images/ice cream.png" alt="ice cream" id="ice cream"><p id="ice-cream-tag">Ice Cream</p></span>
+                <span><img src="establishment-dlsu-main-page-images/coffee.png" alt="coffee" id="coffee"><p id="coffee-tag">Coffee</p></span>
+            </div>
+
+            <div>
+                <span><img src="establishment-dlsu-main-page-images/fries.png" alt="fries" id="fries"><p id="fries-tag">Fries</p></span>
+                <span><img src="establishment-dlsu-main-page-images/pasta.png" alt="pasta" id="pasta"><p id="pasta-tag">Pasta</p></span>
+                <span><img src="establishment-dlsu-main-page-images/tapa.png" alt="tapa" id="tapa"><p id="tapa-tag">Tapa</p></span>
+                <span><img src="establishment-dlsu-main-page-images/chicken.png" alt="chicken" id="chicken"><p id="chicken-tag">Chicken</p></span>
+            </div>
+
+            <div>
+                <span><img src="establishment-dlsu-main-page-images/rice-bowl.png" alt="rice-bowl" id="rice-bowl"> <p id="rice-bowl-tag">Rice Bowl</p></span>
+                <span><img src="establishment-dlsu-main-page-images/sandwich.png" alt="sandwich" id="sandwich"><p id="sandwich-tag">Sandwich/Burger</p></span>
+                <span><img src="establishment-dlsu-main-page-images/veggies.png" alt="veggies" id="veggies"><p id="veggies-tag">Veggies</p></span>
+                <span><img src="establishment-dlsu-main-page-images/fish.png" alt="fish" id="fish"><p id="fish-tag">Fish</p></span>
+            </div>
+
+            <div>
+                <span><img src="establishment-dlsu-main-page-images/curry.png" alt="curry" id="curry"><p id="curry-tag">Curry</p></span>
+                <span><img src="establishment-dlsu-main-page-images/jamaican-patty.png" alt="jamaican-pattie" id="jamaican-pattie"><p id="jamaican-pattie-tag">Pastry</p></span>
+                <span><img src="establishment-dlsu-main-page-images/street-food.png" alt="street-food" id="street-food"><p id="street-food-tag">Street Food</p></span>
+                <span><img src="establishment-dlsu-main-page-images/salad.png" alt="salad" id="salad"><p id="salad-tag">Salad</p></span>
+            </div>
+
+            <div style="width: 400px;">
+                <span><img src="establishment-dlsu-main-page-images/tea.png" alt="tea" id="tea"><p id="tea-tag">Tea</p></span>
+                <span><img src="establishment-dlsu-main-page-images/shake.png" alt="shake" id="shake"><p id="shake-tag">Shake/Juice</p></span>
+            </div>
+        </div>
+        <img src="establishment-dlsu-main-page-images/nextbtn.png" alt="nextBtn" id="nextBtn" />
+    </div>
+
+    <div class="top-restos">
+        <h2> Top restaurants for you </h2>
+        <div class="restos-gallery">
+            <div><img src="establishment-dlsu-main-page-images/colonels-curry.png" alt="colonels-curry" id="colonels-curry"><p id="colonels-curry-tag">Colonel's Curry</p></div>
+            <div><img src="establishment-dlsu-main-page-images/pericos.jpg" alt="pericos" id="pericos"><p id="pericos-tag">Perico's Grill</p></div>
+            <div><img src="establishment-dlsu-main-page-images/mongolian-master.jpg" alt="mongolian-master" id="mongolian-master"><p id="mongolian-master-tag">Mongolian Master</p></div>
+        </div>
+    </div>
+
+    <h3 id="all-food">All Establishments in DLSU Manila Main</h3> <br/>
+
+    <div class="establishments">
+        <a href="perico's.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/pericos-food.jpg" alt="pericos-food" id="pericos-food" />
+            <div class="criteria">
+                <p>&nbsp;Variety&nbsp;</p>
+                <p>&nbsp;Standard&nbsp;</p>
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Perico's Grill</h3>
+                <p id="rating-pericos">4.8 ⁎ </p>
+            </div>
+            <p class="type">Filipino, Pasta, Tapa, Chicken, Pork, Seafood</p>
+        </div>
+       </a>
+
+        <a href="famous-belgian-waffle.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/fbw-food.jpg" alt="fbw-food" id="fbw-food" />
+            <div class="criteria">
+                <p>&nbsp;Variety&nbsp;</p>
+                <p>&nbsp;Affordability&nbsp;</p>
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Famous Belgian Waffles</h3>
+                <p id="rating-fbw">4.7 ⁎ </p>
+            </div>
+            <p class="type">Breakfast, Sweets, Savory, Coffee</p>
+        </div>
+        </a>
+
+        <a href="la-casita.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/la-casita-food.jpg" alt="la-casita-food" id="la-casita-food" />
+            <div class="criteria">
+                <p>&nbsp;Variety&nbsp;</p>
+                <p>&nbsp;Standard&nbsp;</p>
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>La Casita Roja</h3>
+                <p id="rating-la-casita">4.6 ⁎ </p>
+            </div>
+            <p class="type">Filipino, Rice meals, Veggies, Pork, Chicken, Fish</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="establishments">
+        <a href="happy-n-healthy.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/hnh-food.jpg" alt="hnh-food" id="hnh-food" />
+            <div class="criteria">
+                <p>&nbsp;Standard&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Happy N' Healthy</h3>
+                <p id="rating-hnh">4.2 ⁎ </p>
+            </div>
+            <p class="type">Veggies, Pasta, Chicken, Beef, Shakes, Juices</p>
+        </div>
+        </a>
+
+        <a href="coffee-bean.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/the-coffee-bean-food.jpg" alt="the-coffee-bean-food" id="the-coffee-bean-food" />
+            <div class="criteria">
+                <p>&nbsp;Standard&nbsp;</p>
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>The Coffee Bean & Tea Leaf</h3>
+                <p id="rating-coffee-bean">4.5 ⁎ </p>
+            </div>
+            <p class="type">Breakfast, Salad, Sandwiches, Pasta, Hot, Cold, Tea, Beverages</p>
+        </div>
+        </a>
+
+        <a href="colonels-curry.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/colonels-food.jpg" alt="colonels-food" id="colonels-food" />
+            <div class="criteria">
+                <p>&nbsp;Affordability&nbsp;</p>
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Colonel's Curry</h3>
+                <p id="rating-colonels">4.9 ⁎ </p>
+            </div>
+            <p class="type">Japanese, Spicy, Chicken, Pork, Beef</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="establishments">
+        <a href="potato-giant.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/potato-giant-food.jpg" alt="potato-giant-food" id="potato-giant-food" />
+            <div class="criteria">
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Potato Giant</h3>
+                <p id="rating-potato-giant">4.5 ⁎ </p>
+            </div>
+            <p class="type">Snacks, Fries, Mojo Potatoes, Hashbrowns</p>
+        </div>
+        </a>
+
+        <a href="mongolian-master.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/mongolian-food.jpg" alt="mongolian-food" id="mongolian-food" />
+            <div class="criteria">
+                <p>&nbsp;Variety&nbsp;</p>
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Mongolian Master</h3>
+                <p id="rating-mongolian">4.7 ⁎ </p>
+            </div>
+            <p class="type">Asian, Rice bowls, Veggies, Protein</p>
+        </div>
+        </a>
+
+        <a href="jamaican-pattie.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/jamaican-food.jpg" alt="jamaican-food" id="jamaican-food" />
+            <div class="name">
+                <h3 id="jamaican-font">De Original Jamaican Pattie Shop And Juice Bar</h3>
+                <p id="rating-jamaican">3.5 ⁎ </p>
+            </div>
+            <p class="type">Pastry, Snacks, Spicy, Beef, Cold, Beverages</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="establishments">
+        <a href="tauyami-takoyaki.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/tauyami-food.jpg" alt="tauyami-food" id="tauyami-food" />
+            <div class="name">
+                <h3>Tauyami Takoyaki</h3>
+                <p id="rating-takoyaki">3.0 ⁎ </p>
+            </div>
+            <p class="type">Japanese, Street food, Snacks, Octopus</p>
+        </div>
+        </a>
+
+        <a href="sandwich-corner.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/sandwich-food.jpg" alt="sandwich-food" id="sandwich-food" />
+            <div class="criteria">
+                <p>&nbsp;Variety&nbsp;</p>
+                <p>&nbsp;Affordability&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Sandwich Corner</h3>
+                <p id="rating-sandwich">4.0 ⁎ </p>
+            </div>
+            <p class="type">Rice meals, Burgers, Siomai, Sausage, Beverages</p>
+        </div>
+        </a>
+
+
+        <a href="aice-ice-cream.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/aice-food.jpg" alt="aice-food" id="aice-food" />
+            <div class="criteria">
+                <p>&nbsp;Affordability&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Aice Ice Cream</h3>
+                <p id="rating-aice">4.4 ⁎ </p>
+            </div>
+            <p class="type">Sweets, Cold</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="establishments">
+        <a href="ezpresso.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/ezpresso-food.jpg" alt="ezpresso-food" id="ezpresso-food" />
+            <div class="criteria">
+                <p>&nbsp;Affordability&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Ezpresso</h3>
+                <p id="rating-ezpresso">3.7 ⁎ </p>
+            </div>
+            <p class="type">Cafe, Cold, Hot, Beverages</p>
+        </div>
+        </a>
+
+        <a href="potato-corner.html">
+        <div class="restaurant">
+            <img src="establishment-dlsu-main-page-images/potato-corner-food.jpg" alt="potato-corner-food" id="potato-corner-food" />
+            <div class="criteria">
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Potato Corner</h3>
+                <p id="rating-potato-corner">4.6 ⁎ </p>
+            </div>
+            <p class="type">Fries, Snacks</p>
+        </div>
+        </a>
+    </div>
+
+    <div class = "footer">
+        <img src = "establishment-bloemen-page-images/logo-black.png" alt="logo" id="logo-black" />
+        <hr />
+        <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+    </div>
+
+    <script>
+
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        });
+
+        nextBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 270;
+        });
+
+        backBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 270;
+        });
+
+    </script>
+</body>
+</html>

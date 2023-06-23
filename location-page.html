@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animo La Salle</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="header">
+        <img src="location-page-images/cover-img.jpg" alt="Cover Image" id="cover-img" class="header" />
+        <img src ="location-page-images/logo-white.png" alt="logo" id="logo-white" class="header" />
+        <div class= "navbar">
+            <a href="#divTwo" class="button">Log in</a>
+            <a href="#divOne" class="button">Register</a>
+         </div>
+        <p id="description" class="header">Find the best restaurants, and food or cuisine, <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspin DLSU Manila Campus</p>
+    </div>
+    <div class="overlay" id="divOne">
+		<div class="wrapper">
+			<h2>Register</h2><a class="close" href="#">&times;</a>
+			<div class="content">
+				<div class="sign-in-container">
+					<form action="location-page-with-user1.html">
+						<label>Username</label>
+						<input placeholder="Username" type="text"  id="username1" name="username1"  required>
+						<label>Password</label>
+						<input placeholder="Password" type="password"  id="password1" name="password1" required>
+						<label>Description</label> 
+						<textarea placeholder="Describe yourself..." id="description" name="description1"></textarea>
+                        <label>Avatar
+                            <input type="file" name="image1" accept="image/png, image/gif, image/jpeg" id="image-file" required />
+                        </label>
+                        <input type="submit" value="Create account"> 
+					</form>
+                    <hr class="border"/>
+                    <label id="existing-account">Already have an account?&nbsp;</label><a href="#divTwo" class="existing-account-log-in">Log in</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="overlay" id="divTwo">
+		<div class="wrapper">
+			<h2>Log In</h2><a class="close" href="#">&times;</a>
+			<div class="content">
+				<div class="sign-in-container">
+					<form action="location-page-with-user1.html">
+						<label>Username</label>
+						<input placeholder="Username" type="text" id="username2" name="username2" required>
+						<label>Password</label>
+						<input placeholder="Password" type="password" id="password2" name="password2"  required>
+						<input type="submit" value="Log-in"> 
+					</form>
+                    <hr class="border"/>
+                    <label id="existing-account">New to TaftFinds?&nbsp;</label><a href="#divOne" class="existing-account-log-in">Create Account</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="locations-title">
+        <p id="locations"> Recognized locations in &nbsp</p> 
+        <img src="location-page-images/dlsu-logo.png" alt="dlsu-logo" id="dlsu-logo" />
+    </div>
+    <p id="locations-descrip"> Discovering the culinary wonders of De La Salle University Manila is made even easier with our handy map! <br>Let the map be your compass as you navigate the recognized locations, ensuring you never miss a mouthwatering moment during your food adventure at DLSU Manila.</p>
+    <img src="location-page-images/DLSU-Food-Trip-Guide.png" alt="dlsu-food-trip-guide" id="dlsu-food-trip-guide" />
+    <hr/>
+    <h3 id="visit"> Where do you want to visit? </h3>
+
+    <div class="container">
+        <button onclick="window.location.href = 'establishments-pericos.html';"> 
+        Perico's Grill + Canteen  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; >
+        </button>
+
+        <button onclick="window.location.href = 'establishments-bloemen.html';"> 
+        Br. Bloemen Hall   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >
+        </button>
+    </div>
+
+    <div class="container">
+        <button onclick="window.location.href = 'establishments-dlsu-main.html';"> 
+            Other options (ex. Coffee Bean.., La Casita..)&nbsp;&nbsp;>
+        </button>
+    </div>
+
+    <div class = "footer">
+        <img src = "location-page-images/logo-black.png" alt="logo" id="logo-black" />
+        <hr/>
+        <p id="closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+    </div>
+</body>
+</html>

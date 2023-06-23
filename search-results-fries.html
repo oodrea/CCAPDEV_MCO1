@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animo La Salle</title>
+    <link rel="stylesheet" href="style20.css">
+    <script src="https://kit.fontawesome.com/32393e27dc.js" crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="establishment-bloemen-page-images/logo-black.png" alt="logo" id="logo-black" class="header" />
+        <select class="dropdown" onchange="redirectOption(this)">
+            <option selected value="dlsu-main">DLSU Manila Main</option>
+            <option value="bloemen">Br. Bloemen Hall </option> 
+            <option value="pericos">Perico's Grill + Canteen</option>
+        </select>
+
+        <div class="form-container">
+            <form id="searchForm" action="javascript:performSearch()">
+                <i class="fas fa-light fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search for a restaurant, cuisine or a dish" >
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+
+        <div class= "navbar">
+            <a href="log-in-page.html" class="button">Log in</a>
+         </div>
+    </div>
+
+    <h5> Home / DLSU Manila Campus </h5>
+
+    <div class="dine-in">
+        <img src="establishment-bloemen-page-images/dine-in.png" alt="dine-in-img" id="dine-in-img" />
+        <p id="dine-in-text"> Dine-in </p>
+    </div>
+
+    <hr id="dine-in-line" />
+    <hr id="main-line"/>
+
+    <div class="sticky">
+        <button id="filters"><i class="fas fa-sharp fa-light fa-filter"></i>Filters</button>
+    </div>
+
+    <h3 id="search-results">Search results for <em> fries</em></h3> <br/>
+
+    <div class="establishments">
+        <a href="potato-corner.html" style="text-decoration:none; color:inherit">
+        <div class="restaurant">
+            <img src="establishment-bloemen-page-images/potato-corner-food.jpg" alt="potato-corner-food" id="potato-corner-food" />
+            <div class="criteria">
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Potato Corner</h3>
+                <p id="rating-potato-corner">4.6 ⁎ </p>
+            </div>
+            <p class="type">Fries, Snacks</p>
+        </a>
+        </div>
+
+        <a href="potato-giant.html" style="text-decoration:none; color:inherit">
+            <div class="restaurant">
+                <img src="establishment-pericos-page-images/potato-giant-food.jpg" alt="potato-giant-food" id="potato-giant-food" />
+                <div class="criteria">
+                    <p>&nbsp;Taste&nbsp;</p>
+                </div>
+                <div class="name">
+                    <h3>Potato Giant</h3>
+                    <p id="rating-potato-giant">4.5 ⁎ </p>
+                </div>
+                <p class="type">Snacks, Fries, Mojo Potatoes, Hashbrowns</p>
+            </div>
+            </a>
+        </div>
+
+    <div class = "footer">
+        <img src = "establishment-pericos-page-images/logo-black.png" alt="logo" id="logo-black" />
+        <hr />
+        <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+    </div>
+</body>
+</html>

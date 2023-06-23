@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animo La Salle</title>
+    <link rel="stylesheet" href="style17.css">
+    <script src="https://kit.fontawesome.com/32393e27dc.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="sandwich-corner-page-images/logo-black.png" alt="logo" id="logo-black" class="header" />
+        <select class="dropdown">
+            <option disabled selected value="bloemen">Br. Bloemen Hall</option>
+            <option value="perico's">  Perico's Grill + Canteen </option>
+            <option value="dlsu-main">DLSU Manila Main</option>
+        </select>
+
+        <div class="form-container">
+            <form action="search-results.html">
+                <i class="fas fa-light fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for a restaurant, cuisine or a dish">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <div class= "navbar">
+            <a href="log-in-page.html" class="button">Log in</a>
+         </div>
+    </div>
+    
+
+    <h5> Home / DLSU Manila Campus / Br. Bloemen Hall /<span> Sandwich Corner </span></h5>
+
+    <div class="photos">
+        <div class="first"> </div>
+        <img src="sandwich-corner-page-images/sc1.jpg" alt="sandwich-corner-food" id="sc1" />
+        <div class="right-part">
+            <div class="second"> </div>
+            <img src = "sandwich-corner-page-images/sc2.jpg" alt="sandwich-corner-food" id="sc2" />
+            <div class="third"> </div>
+            <img src = "sandwich-corner-page-images/sc3.jpg" alt="sandwich-corner-food" id="sc3"/>
+        </div>
+    </div>
+
+    <div class="sticky">
+        <div class="title-container">
+            <div class="name-details">
+                <p id="name">Sandwich Corner</p>
+                <p id="type">Rice meals, Burgers, Siomai, Sausage, Beverages</p>
+                <p id="location">Br. Bloemen Hall</p>
+                <p id="details"><span>Opening Hours: </span> Unknown </p>
+            </div>
+
+            <div class="rating">
+                <p id="stars">&nbsp;4.0 ⁕&nbsp;</p>
+                <div class="no-of-reviews">
+                    <p id ="dine-in-reviews">1</p>
+                    <a href="">Dine-in Review</a>
+                </div>
+            </div>
+        </div>
+
+         <div class="navbar">
+            <a href="#" onclick="showSection('overview', this, event)" class="link not-active-link">Overview</p>
+            <a href="#" onclick="showSection('reviews', this, event)"  class="link not-active-link">Reviews</p>
+            <a href="#" onclick="showSection('photos', this, event)"  class="link not-active-link">Photos</a>
+            <a href="#" onclick="showSection('menu2', this, event)"  class="link not-active-link">Menu</a>
+         </div>
+
+         <hr id="main-line"/>
+    </div>
+
+    <div id="overview" class="section">
+       <div id="summary">
+            <h2>About this place</h2>
+            <h3 id ="menu">Menu</h3>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 1</div>
+                    <img src="sandwich-corner-page-images/sc-menu1.png">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="margin-left: 132px;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+            </div>
+
+            <h3>Cuisines</h3>
+            <div id="cuisines">
+                <p>&nbsp;&nbsp;Rice meals&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Burgers&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Siomai&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Sausage&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;Beverages&nbsp;&nbsp;</p>
+            </div>
+
+            <h3>People Say This Place Is Known For</h3>
+            <p id ="description">Affordable Snacks and Rice meals, Detailed Menu with Variety of Food options</p>
+        
+            <h3>More Info</h3>
+            <div class="more-info">
+                <div class="info-sep"> 
+                    <div><i class="fas fa-light fa-circle-check" style="color: #3cbe3c;"></i> <p>Clean Service</p></div>
+                    <div><i class="fas fa-light fa-circle-check" style="color: #3cbe3c;"></i> <p>Kind Staff</p></div>
+                </div>
+            </div>
+
+            <div class="establishment-register">
+                <p id="question">Are you the owner of this establishment?</p>
+                <p id="respond">Respond to reviews on it > </p>
+            </div>
+
+            
+            <hr class="review-highlights"/>
+            <h3>Review Highlights</h3>
+
+            <div class="criteria">
+                <img src="sandwich-corner-page-images/variety.png" alt="variety"/>
+                <p>The restaurant can offer a diverse range of options on their menu, catering to different tastes and dietary preferences.</p>
+            </div>
+
+            <div class="criteria">
+                <img src="sandwich-corner-page-images/affordability.png" alt="affordability"/>
+                <p>The restaurant can provide reasonably priced meals and offers value for money without compromising on quality.</p>
+            </div>
+
+            <hr class="review-highlights"/>
+
+            <h3>Top Reviews</h3>
+
+            <div class="review">
+                <div class="profile">
+                    <img src="sandwich-corner-page-images/v.jpg" alt="profile-pic-v" />
+                    <div class="name-details">
+                        <p id="name">Taehyung</p>
+                        <p id="no-of-reviews">10 reviews</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp;4 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">June 15, 2023</p>
+                </div>
+
+                <div class="content">
+                    <p id="title">Budget-friendly food</p>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;not bad&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;filling&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;good balance&nbsp;&nbsp;</p>
+                </div>
+
+                <p id="votes-and-comments"><span id="no-of-votes-helpful">4</span> votes for helpful, <span id="no-of-votes-unhelpful">0</span> votes for unhelpful, <span id="no-of-comments">0</span> comments</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+
+                <hr class="review-highlights2"/>
+            </div>
+
+            <p id="view-all"> View all reviews ></p>
+
+            <div class = "footer">
+                <img src = "sandwich-corner-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+        <div id="other-details">
+            <h3 class="contact">Contact Number</h3>
+            <p id="number" class="contact-content contact">0915 534 6782</p>
+
+            <h3 class="contact">Address</h3>
+            <img src="sandwich-corner-page-images/bloemen-location.JPG" alt="bloemen-location" />
+            <p id="address" class="contact-content contact">Br. Bloemen Hall, De La Salle University, 2401 Taft Ave, Malate, Manila, 1004 Metro Manila</p>
+       
+            <h3 class="contact">Social Media</h3>
+            <div class="social-media">
+                <a href="https://www.facebook.com/sandwichcornerindlsu" target ="_blank" id="facebook"><i class="fa-brands fa-facebook"></i></a>
+       
+            </div>
+        </div>
+    </div>
+
+    <div id="reviews" class="section">
+        <div id="part1">
+            <p class="name-of-resto">Sandwich Corner Reviews</p>
+            <div id="all-filters">
+
+                <select class="dropdown-reviews-filters dropdown-reviews-filter1">
+                    <option disabled selected value="all-reviews">  All Reviews </option>
+                    <option value="all-reviews">  Your Reviews </option>
+                </select> 
+
+                <div class="form-container2">
+                    <form>
+                        <i class="fas fa-light fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for a review">
+                        <button type="submit"> Search </button>
+                    </form>
+                </div>
+
+                <i class="fas fa-sharp fa-light fa-filter"></i> 
+
+                <select class="dropdown-reviews-filters dropdown-reviews-filter2">
+                    <option disabled selected value="highest-rated">  Highest Rated </option>
+                    <option value="lowest-rated">  Lowest Rated </option>
+                    <option value="highest-rated">  Newest First </option>
+                    <option value="lowest-rated">  Oldest First </option>
+                </select>
+            </div>
+
+            <div class="review-detailed">
+                <div class="profile">
+                    <img src="sandwich-corner-page-images/v.jpg" alt="profile-pic-v" />
+                    <div class="name-details">
+                        <p id="name">Taehyung</p>
+                        <p id="no-of-reviews">10 reviews</p>
+                    </div>
+                </div>
+                <div class="rating2">
+                    <p id="rating-num">&nbsp;4 ⁕&nbsp;</p>
+                    <p id="dine-in2">DINE-IN</p>
+                    <p id="date">June 15, 2023</p>
+                </div>
+
+                <div class="content">
+                    <p id="title">Budget-friendly food</p>
+                </div>
+
+                <div class="headings">
+                    <p>&nbsp;&nbsp;not bad&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;filling&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;good balance&nbsp;&nbsp;</p>
+                </div>
+
+                <div class="review-content">
+                    The food are budget-friendly indeed but it does not compromise the quality of the food. 
+                    I tried the Hungarian Sausage burger and the taste was not bad. I found it filling to the stomach.
+                    There is also a good balance of the ingredients. 
+                </div>
+
+                <p id="votes-and-comments"><span id="no-of-votes-helpful">4</span> votes for helpful, <span id="no-of-votes-unhelpful">0</span> votes for unhelpful, <span id="no-of-comments">0</span> comments</p>
+          
+                <div class="marks">
+                    <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                    <p>Helpful</p>
+                    <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                    <p>Unhelpful</p>
+                    <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                    <p>Comment</p>
+                </div>
+
+                <hr class="review-highlights2"/>
+            </div>
+
+            <div id="no-of-pages">
+                <p id="no-1">&nbsp;&nbsp;1&nbsp;&nbsp;</p>
+            </div>
+
+            <hr class="review-highlights3"/>
+
+            <div class = "footer">
+                <img src = "sandwich-corner-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+    
+            
+    <div id="photos" class="section">
+        <div>
+            <div id="part2">
+                <p class="name-of-resto">Sandwich Corner Photos</p>
+                <p class="img-category">&nbsp;All (<span id="num">0</span>)&nbsp;</p>
+                <p class="none">None</p>
+
+                <p class="img-category">&nbsp;Food (<span id="num">0</span>)&nbsp;</p>
+                <p class="none">None</p>
+
+                <p class="img-category">&nbsp;Ambience (<span id="num">0</span>)&nbsp;</p>
+                <p class="none">None</p>
+            </div>
+            <div class = "footer">
+                <img src = "sandwich-corner-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu2" class="section">
+        <div id="part3">
+            <p class="name-of-resto">Sandwich Corner Menu </p> 
+            <div id="menu-photos">
+                <img src="sandwich-corner-page-images/sc-menu1.png" alt="sc-menu1"/>
+            </div>
+
+            <div class = "footer">
+                <img src = "sandwich-corner-page-images/logo-black.png" alt="logo" id="logo-black" />
+                <hr />
+                <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animo La Salle</title>
+    <link rel="stylesheet" href="style19.css">
+    <script src="https://kit.fontawesome.com/32393e27dc.js" crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+    <script src="script2.5.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="location-page-with-user-images/logo-black.png" alt="logo" id="logo-black" class="header" />
+        <select class="dropdown" onchange="redirectOption(this)">
+            <option selected value="pericos">Perico's Grill + Canteen</option>
+            <option value="bloemen">Br. Bloemen Hall</option>
+            <option value="dlsu-main">DLSU Manila Main</option>
+        </select>
+
+        <div class="form-container">
+            <form id="searchForm" action="javascript:performSearch()">
+                <i class="fas fa-light fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search for a restaurant, cuisine or a dish" >
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+
+        <div class= "navbar">
+            <img src="location-page-with-user-images/niki.jpg" alt="niki-profile-img" id="profile=img" />
+            <div class="dropdown2">
+                <button onclick="showDropdownElements()" class="dropbtn">NI-KI</button> 
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Profile</a>
+                  <a href="location-page.html">Log out</a>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <hr id="main-line"/>
+
+    <div class="profile-header">
+        <img src="location-page-with-user-images/cover-photo.png" alt="cover-photo" id="cover-photo"/>
+        <div class="bottom-left"><img src="location-page-with-user-images/niki.jpg" id="niki" alt="niki"><h3>NI-KI</h3></div>
+        <div class="center-right"><button id="edit" onclick="editProf()"> <i class="fa-regular fa-pen-to-square"></i> Edit profile </button></div>
+
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Edit Profile</h2>
+              <form>                
+                <label for="profile-description">Description:</label>
+                <textarea id="profile-description" name="profile-description" rows="4">Hello! I'm NI-KI from BS Communication Arts Program. I'm 19 years old and I love eating 😋. My favorite food is sushi</textarea>
+
+                <div id="profpic">
+                    <label for="profilepic">Profile Picture:</label>
+                    <label for="profile-picture" class="custom-file-upload">
+                      <i class="fas fa-upload"></i> Upload Profile Picture
+                    </label>
+                    <input type="file" id="profile-picture" name="profile-picture" accept="image/*" style="display: none;">
+                  </div>
+                  
+                <div class="save-edit-button-container">
+                    <input type="submit" value="Save Changes">
+                  </div>
+              </form>
+              
+            </div>
+          </div>
+
+        <div class="bottom-right"><a href="#reviews-content"><span>3</span><p>Reviews</p></a></div>
+    </div>
+
+    <div class="description-content">
+        <h2>Description</h2>
+        <p>Hello! I'm NI-KI from BS Communication Arts Program. I'm 19 years old and I love eating 😋. 
+          My favorite food is sushi. 
+        </p>
+    </div>
+
+    <div id="reviews-content">
+        <h2 id="reviews-tag"> Reviews</h2>
+        
+        <div class="filters">
+            <i class="fas fa-sharp fa-light fa-filter"></i> 
+
+            <select class="dropdown-reviews-filters">
+                <option disabled selected value="newest-first">  Newest First</option>
+                <option value="oldest-first">  Oldest First </option>
+                <option value="highest-rated">  Highest Rated </option>
+                <option value="lowest-rated">  Lowest Rated </option>
+            </select>
+        </div>
+
+        <div class="review-detailed">
+           <h2> <a href="colonels-curry.html" target="_blank"> For Colonel's Curry </a>  </h2>
+            <div class="rating2">
+                <p id="rating-num">&nbsp;5 ⁕&nbsp;</p>
+                <p id="dine-in2">DINE-IN</p>
+                <p id="date">June 17, 2023</p>
+            </div>
+
+            <div class="content">
+                <p id="title">Highly, Highly Recommended!</p>
+                <div class="positive-or-negative">
+                 <i class="fa-solid fa-thumbs-up" style="color: #38af3a;"></i>
+                 <p id="preference">POSITIVE</p>
+                </div>
+            </div>
+
+            <div class="headings">
+                <p>&nbsp;&nbsp;flavorsome&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;quick service&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;budget-friendly &nbsp;&nbsp;</p>
+            </div>
+
+            <div class="review-content">
+                The Laksa Curry is indeed flavorsome. I loved it! Plus, their service is quick but that certainly does not compromise the quality of the foood 👌🏽
+                Also, the food is affordable...really worth the money given their portion size. Highly, highly recommended!
+            </div>
+            <hr class="review-highlights2"/>
+        </div>
+
+        <div class="review-detailed">
+            <h2> <a href="tauyami-takoyaki.html" target="_blank"> For Tauyami Takoyaki </a> </h2>
+            <div class="rating2">
+                <p id="rating-num">&nbsp; 3 ⁕&nbsp;</p>
+                <p id="dine-in2">DINE-IN</p>
+                <p id="date">May 08, 2023</p>
+            </div>
+
+            <div class="content">
+                <p id="title">Fine Japanese Street food</p>
+                <div class="positive-or-negative">
+                <i class="fa-solid fa-thumbs-down" style="color: #38af3a;"></i>
+                <p id="preference">NEGATIVE</p>
+                </div>
+            </div>
+
+            <div class="headings">
+                <p>&nbsp;&nbsp;toppings not fresh&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;less sauce, too many toppings&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;tasty seasoning&nbsp;&nbsp;</p>
+            </div>
+
+            <div class="review-content">
+                The first thing I noticed was that there was little sauce on the Takoyaki I ordered but too many toppings.
+                The inproportionate ratio made the Takoyaki dry and hard to eat. Moreover, I could see and taste that the toppings
+                were not really fresh. The seasoning was good, but the execution on the dish all-in-all ruined this subtle goodness. 
+            </div>
+             <hr class="review-highlights2"/>
+        </div>
+
+        <div class="review-detailed">
+            <h2> <a href="perico's.html" target="_blank"> For Perico's Grill </a> </h2>
+            <div class="rating2">
+                <p id="rating-num">&nbsp; 5 ⁕&nbsp;</p>
+                <p id="dine-in2">DINE-IN</p>
+                <p id="date">April 09, 2023</p>
+            </div>
+
+            <div class="content">
+                <p id="title">The Top Restaurant in DLSU!</p>
+                <div class="positive-or-negative">
+                 <i class="fa-solid fa-thumbs-up" style="color: #38af3a;"></i>
+                 <p id="preference">POSITIVE</p>
+                </div>
+            </div>
+
+            <div class="headings">
+                <p>&nbsp;&nbsp;worth the money&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;homely, tasty food&nbsp;&nbsp;</p>
+                <p>&nbsp;&nbsp;great service&nbsp;&nbsp;</p>
+            </div>
+
+            <div class="review-content">
+                This is certainly my favorite food place in DLSU. So convenient to eat in the campus with food
+                that tastes close to one's home, so gooooood. I don't have to go out anymore and the prices are not bad for anyone
+                on a budget. The service is great. My personal favorite is the Chicken Cordon Bleu...chef's kiss😘
+            </div>
+
+            <div class="review-photos">
+                <img src="pericos-page-images/chicken-cordon-bleu.jpg" alt="chicken-cordon-bleu" />
+             </div>
+
+            <hr class="review-highlights2"/>
+        </div>
+    </div>
+
+    <div class="comments-content">
+        <h2 id="comment-tag">Comments</h2>  
+        
+        <div class="review-detailed">
+            <h2> <a href="potato-corner.html" target="_blank"> For Potato Corner </a>  </h2>
+            <div class="profile">
+                <img src="potato-corner-page-images/MOMO.jpg" alt="momo" />
+                <div class="name-details">
+                    <p id="name">MOMO</p>
+                    <p id="no-of-reviews">15 reviews</p>
+                </div>
+            </div>
+            <div class="rating2">
+                <p id="rating-num">&nbsp;5 ⁕&nbsp;</p>
+                <p id="dine-in2">DINE-IN</p>
+                <p id="date">June 01, 2023</p>
+            </div>
+    
+            <div class="content">
+                <p id="title">Addictingly Delicious</p>
+                <div class="positive-or-negative">
+                 <i class="fa-solid fa-thumbs-up" style="color: #38af3a;"></i>
+                 <p id="preference">POSITIVE</p>
+                </div>
+            </div>
+    
+            <div class="headings">
+                <p>&nbsp;&nbsp;finger-licking fries&nbsp;&nbsp;</p>
+            </div>
+    
+            <div class="review-content">
+                Their fries are addicting, especially the cheese flavor and sour cream flavor. Yuuuuuum! Writing this review makes me crave for 
+                it. I always lick my fingers after eating those fries hahahahah not really embarrassing 😮 
+            </div>
+    
+            <div class="review-photos">
+                <img src="potato-corner-page-images/sour-cream-and-cheese.jpg" alt="sour-cream-and-cheese" />
+             </div>
+    
+             <p id="votes-and-comments"><span id="no-of-votes-helpful">3</span> votes for helpful, <span id="no-of-votes-unhelpful">1</span> votes for unhelpful, <span id="no-of-comments">2</span> comments</p>
+      
+             <div class="marks">
+                <i class="fas fa-light fa-thumbs-up" style="color: rgb(101, 100, 100);"></i>
+                <p>Helpful</p>
+                <i class="fas fa-light fa-thumbs-down" style="color: rgb(101, 100, 100);"></i>
+                <p>Unhelpful</p>
+                <i class="fas fa-light fa-comments" style="color: rgb(101, 100, 100);"></i>
+                <p>Comment</p>
+             </div>
+    
+            <hr class="review-highlights2"/>
+    
+             <p class="label-for-comments"> Comments </p>
+    
+             <div class="comments">
+                    <div class="comment-profile">
+                        <img src="potato-corner-page-images/niki.jpg" alt="niki" />
+                        <p id="commentor">NI-KI</p>
+                        <hr />
+                        <div>
+                            <p id="comment"> No worries... I also lick my fingers after eating their fries hahaha.. They're just so good!</p>
+                            <p id="sent-details"> Sent June 02, 2023</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "footer">
+        <img src = "location-page-with-user-images/logo-black.png" alt="logo" id="logo-black" />
+        <hr />
+        <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+    </div>
+
+</body>
+</html>

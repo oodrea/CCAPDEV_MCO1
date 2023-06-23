@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animo La Salle</title>
+    <link rel="stylesheet" href="style4.css">
+    <script src="https://kit.fontawesome.com/32393e27dc.js" crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="establishment-bloemen-page-images/logo-black.png" alt="logo" id="logo-black" class="header" />
+        <select class="dropdown" onchange="redirectOption(this)">
+            <option selected value="bloemen">Br. Bloemen Hall </option> 
+            <option value="pericos">Perico's Grill + Canteen</option>
+            <option value="dlsu-main">DLSU Manila Main</option>
+        </select>
+
+        <div class="form-container">
+            <form id="searchForm" action="javascript:performSearch()">
+                <i class="fas fa-light fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search for a restaurant, cuisine or a dish" >
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+
+        <div class= "navbar">
+            <a href="log-in-page.html" class="button">Log in</a>
+         </div>
+    </div>
+
+    <h5> Home / DLSU Manila Campus /<span> Br. Bloemen Hall Restaurants</span></h5>
+
+    <div class="dine-in">
+        <img src="establishment-bloemen-page-images/dine-in.png" alt="dine-in-img" id="dine-in-img" />
+        <p id="dine-in-text"> Dine-in </p>
+    </div>
+
+    <hr id="dine-in-line" />
+    <hr id="main-line"/>
+
+    <div class="sticky">
+        <button id="filters"><i class="fas fa-sharp fa-light fa-filter"></i>Filters</button>
+    </div>
+
+    <div class="gallery-wrap">
+        <h3>What are you craving?</h3> <br/>
+        <img src="establishment-bloemen-page-images/backbtn.png" alt="backBtn" id="backBtn" />
+        <div class="gallery">
+            <div>
+                <span><img src="establishment-bloemen-page-images/rice-bowl.png" alt="rice-bowl" id="rice-bowl"> <p id="rice-bowl-tag">Rice Bowl</p></span>
+                <span><img src="establishment-bloemen-page-images/sandwich.png" alt="sandwich" id="sandwich"><p id="sandwich-tag">Sandwich/Burger</p></span>
+                <span><img src="establishment-bloemen-page-images/veggies.png" alt="veggies" id="veggies"><p id="veggies-tag">Veggies</p></span>
+                <span><img src="establishment-bloemen-page-images/chicken.png" alt="chicken" id="chicken"><p id="chicken-tag">Chicken</p></span>
+            </div>
+
+            <div>
+                <span><img src="establishment-bloemen-page-images/curry.png" alt="curry" id="curry"><p id="curry-tag">Curry</p></span>
+                <span><img src="establishment-bloemen-page-images/jamaican-patty.png" alt="jamaican-pattie" id="jamaican-pattie"><p id="jamaican-pattie-tag">Pastry</p></span>
+                <span><img src="establishment-bloemen-page-images/street-food.png" alt="street-food" id="street-food"><p id="street-food-tag">Street Food</p></span>
+                <span><img src="establishment-bloemen-page-images/fries.png" alt="fries" id="fries"><p id="fries-tag">Fries</p></span>
+            </div>
+
+            <div style="width: 200px;">
+                <span><img src="establishment-bloemen-page-images/shake.png" alt="shake" id="shake"><p id="shake-tag">Shake/Juice</p></span>
+            </div>
+        </div>
+        <img src="establishment-bloemen-page-images/nextbtn.png" alt="nextBtn" id="nextBtn" />
+    </div>
+
+    <div class="top-restos">
+        <h2> Top restaurants for you </h2>
+        <div class="restos-gallery">
+            <div><img src="establishment-bloemen-page-images/colonels-curry.png" alt="colonels" id="colonels"><p id="colonels-tag">Colonel's Curry</p></div>
+            <div><img src="establishment-bloemen-page-images/mongolian-master.jpg" alt="mongolian-master" id="mongolian-master"><p id="mongolian-master-tag">Mongolian Master</p></div>
+            <div><img src="establishment-bloemen-page-images/potato-corner.png" alt="potato-corner" id="potato-corner"><p id="potato-corner-tag">Potato Corner</p></div>
+        </div>
+    </div>
+
+    <h3 id="all-food">All Establishments in Br. Bloemen Hall</h3> <br/>
+
+    <div class="establishments">
+        <a href="colonels-curry.html">
+        <div class="restaurant">
+            <img src="establishment-bloemen-page-images/colonels-food.jpg" alt="colonels-food" id="colonels-food" />
+            <div class="criteria">
+                <p>&nbsp;Affordability&nbsp;</p>
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Colonel's Curry</h3>
+                <p id="rating-colonels">4.9 ⁎ </p>
+            </div>
+            <p class="type">Japanese, Spicy, Chicken, Pork, Beef</p>
+        </div>
+    </a>
+
+        <a href="jamaican-pattie.html">
+        <div class="restaurant">
+            <img src="establishment-bloemen-page-images/jamaican-food.jpg" alt="jamaican-food" id="jamaican-food" />
+            <div class="name">
+                <h3 id="jamaican-font">De Original Jamaican Pattie Shop And Juice Bar</h3>
+                <p id="rating-jamaican">3.5 ⁎ </p>
+            </div>
+            <p class="type">Pastry, Snacks, Spicy, Beef, Cold, Beverages</p>
+        </div>
+        </a>
+
+        <a href="potato-corner.html">
+        <div class="restaurant">
+            <img src="establishment-bloemen-page-images/potato-corner-food.jpg" alt="potato-corner-food" id="potato-corner-food" />
+            <div class="criteria">
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Potato Corner</h3>
+                <p id="rating-potato-corner">4.6 ⁎ </p>
+            </div>
+            <p class="type">Fries, Snacks</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="establishments">
+        <a href="happy-n-healthy.html">
+        <div class="restaurant">
+            <img src="establishment-bloemen-page-images/hnh-food.jpg" alt="hnh-food" id="hnh-food" />
+            <div class="criteria">
+                <p>&nbsp;Standard&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Happy N' Healthy</h3>
+                <p id="rating-hnh">4.2 ⁎ </p>
+            </div>
+            <p class="type">Veggies, Pasta, Chicken, Beef, Shakes, Juices</p>
+        </div>
+        </a>
+
+        <a href="sandwich-corner.html">
+        <div class="restaurant">
+            <img src="establishment-bloemen-page-images/sandwich-food.jpg" alt="sandwich-food" id="sandwich-food" />
+            <div class="criteria">
+                <p>&nbsp;Variety&nbsp;</p>
+                <p>&nbsp;Affordability&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Sandwich Corner</h3>
+                <p id="rating-sandwich">4.0 ⁎ </p>
+            </div>
+            <p class="type">Rice meals, Burgers, Siomai, Sausage, Beverages</p>
+        </div>
+        </a>
+
+        <a href="mongolian-master.html">
+        <div class="restaurant">
+            <img src="establishment-bloemen-page-images/mongolian-food.jpg" alt="mongolian-food" id="mongolian-food" />
+            <div class="criteria">
+                <p>&nbsp;Variety&nbsp;</p>
+                <p>&nbsp;Taste&nbsp;</p>
+            </div>
+            <div class="name">
+                <h3>Mongolian Master</h3>
+                <p id="rating-mongolian">4.7 ⁎ </p>
+            </div>
+            <p class="type">Asian, Rice bowls, Veggies, Protein</p>
+        </div>
+        </a>
+    </div>
+
+    <div class = "footer">
+        <img src = "establishment-bloemen-page-images/logo-black.png" alt="logo" id="logo-black" />
+        <hr />
+        <p id = "closing"> 2023 © TaftFinds™ Ltd. All rights reserved. </p>
+    </div>
+
+    <script>
+
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel",(evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        });
+
+        nextBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 270;
+        });
+
+        backBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 270;
+        });
+
+    </script>
+</body>
+</html>
